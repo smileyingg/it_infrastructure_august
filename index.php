@@ -46,15 +46,15 @@
             <!-- Q1. -->
             <h5>1. ด้านเนื้อหา</h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -82,15 +82,15 @@
           <div class="card-body">
             <h5>2. ด้านการถ่ายทอดเนื้อหา</h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -136,15 +136,15 @@
           <div class="card-body">
             <h5>3. ด้านสถานที่และอุปกรณ์</h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -206,15 +206,15 @@
           <div class="card-body">
             <h5>4. ด้านการจัดงาน</h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">รายการประเมิน</th>
-                  <th scope="col" style="width: 100px;">มากที่สุด</th>
-                  <th scope="col" style="width: 100px;">มาก</th>
-                  <th scope="col" style="width: 100px;">ปานกลาง</th>
-                  <th scope="col" style="width: 100px;">น้อย</th>
-                  <th scope="col" style="width: 100px;">น้อยที่สุด</th>
+                  <th scope="col" style="width: 7%;">มากที่สุด</th>
+                  <th scope="col" style="width: 7%;">มาก</th>
+                  <th scope="col" style="width: 7%;">ปานกลาง</th>
+                  <th scope="col" style="width: 7%;">น้อย</th>
+                  <th scope="col" style="width: 7%;">น้อยที่สุด</th>
                 </tr>
               </thead>
               <tbody>
@@ -268,12 +268,12 @@
           <div class="card-body">
             <h5>ประเภทการบริการที่สนใจ</h5><br />
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive">
               <thead class="thead-light">
                 <tr style="text-align:center;">
                   <th scope="col">ประเภทการบริการ</th>
-                  <th scope="col" style="width: 250px;">มีความสนใจ/<br />ต้องการบริการในขณะนี้</th>
-                  <th scope="col" style="width: 250px;">ยังไม่สนใจ</th>
+                  <th scope="col" style="width: 12%;">มีความสนใจ/<br />ต้องการบริการในขณะนี้</th>
+                  <th scope="col" style="width: 12%;">ยังไม่สนใจ</th>
 
                 </tr>
               </thead>
@@ -380,6 +380,41 @@
     });
   </script>
   <!-- end script submit -->
+
+  <script>
+    //   $(document).ready(function() {
+    //     $('#dtHorizontalExample').DataTable({
+    //       "scrollX": true
+    //     });
+    //     $('.dataTables_length').addClass('bs-select');
+    //   });
+    // 
+  </script>
+
+  <style>
+    .dtHorizontalExampleWrapper {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    #dtHorizontalExample th,
+    td {
+      white-space: nowrap;
+    }
+
+    table.dataTable thead .sorting:after,
+    table.dataTable thead .sorting:before,
+    table.dataTable thead .sorting_asc:after,
+    table.dataTable thead .sorting_asc:before,
+    table.dataTable thead .sorting_asc_disabled:after,
+    table.dataTable thead .sorting_asc_disabled:before,
+    table.dataTable thead .sorting_desc:after,
+    table.dataTable thead .sorting_desc:before,
+    table.dataTable thead .sorting_desc_disabled:after,
+    table.dataTable thead .sorting_desc_disabled:before {
+      bottom: .5em;
+    }
+  </style>
 
 </body>
 
