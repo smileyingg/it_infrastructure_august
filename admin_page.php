@@ -31,7 +31,7 @@ include 'head.php';
   </div>
 
   <div style="overflow-x:auto;padding:10Px;">
-    <table class="table table-hover table-striped table-bordered table-sm" id="dtHorizontalVerticalExample">
+    <table class="table table-hover table-striped table-bordered table-sm table-responsive" id="dtHorizontalVerticalExample">
       <!-- หัวข้อตาราง -->
       <tr align='center' bgcolor='#CCCCCC'>
         <td>id</td>
@@ -95,7 +95,8 @@ include 'head.php';
       mysqli_close($conn);
       ?>
   </div>
-  <script>
+
+  <!-- <script>
     $(document).ready(function() {
       $('#dtHorizontalExample').DataTable({
         "scrollX": true
@@ -127,7 +128,7 @@ include 'head.php';
     table.dataTable thead .sorting_desc_disabled:before {
       bottom: .5em;
     }
-  </style>
+  </style> -->
 </body>
 
 </html>
