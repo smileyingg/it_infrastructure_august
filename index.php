@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php include 'head.php'; ?>
+<?php include 'script_choice.php'; ?>
 
 <style>
   .h-form .form-body .h-form-label {
@@ -280,19 +281,60 @@
               <tbody>
                 <tr style="text-align:center;">
                   <th scope="row" style="text-align:left;">Monitoring as a Service</th>
-                  <td><input type="radio" name="q5_s1" id="q5_s1_c1" value="มีความสนใจ/ต้องการบริการในขณะนี้" required></td>
-                  <td><input type="radio" name="q5_s1" id="q5_s1_c2" value="ยังไม่สนใจ" required></td>
+                  <td><input type="radio" name="q5_s1" id="q5_s1_c1" onclick="checkInterested();" value="มีความสนใจ/ต้องการบริการในขณะนี้" required></td>
+                  <td><input type="radio" name="q5_s1" id="q5_s1_c2" onclick="checkInterested();" value="ยังไม่สนใจ" required></td>
                 </tr>
                 <tr style="text-align:center;">
                   <th scope="row" style="text-align:left;">Software Defined Infrastructure</th>
-                  <td><input type="radio" name="q5_s2" id="q5_s2_c1" value="มีความสนใจ/ต้องการบริการในขณะนี้" required></td>
-                  <td><input type="radio" name="q5_s2" id="q5_s2_c2" value="ยังไม่สนใจ" required></td>
+                  <td><input type="radio" name="q5_s2" id="q5_s2_c1" onclick="javascript:checkInterested();" value="มีความสนใจ/ต้องการบริการในขณะนี้" required></td>
+                  <td><input type="radio" name="q5_s2" id="q5_s2_c2" onclick="javascript:checkInterested();" value="ยังไม่สนใจ" required></td>
                 </tr>
 
               </tbody>
             </table>
           </div>
           <!-- End -->
+
+          <!-- Detial. -->
+          <div class="card-body" id="ifYes" style="display:none ">
+            <h5>กรุณากรอกรายละเอียดต่อไปนี้ <span class="required" style="color:red;">*</span></h5><br />
+            <div class="col-sm-6">
+              <div class="input-group mx-sm-5 mb-3">
+                <div class="input-group-prepend">
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อบริษัท</span>
+                </div>
+                <input type="text" class="form-control" id="company_name" name="company_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="input-group mx-sm-5 mb-3">
+                <div class="input-group-prepend">
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">ชื่อผู้ให้ข้อมูล</span>
+                </div>
+                <input type="text" class="form-control" id="customer_name" name="customer_name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="input-group mx-sm-5 mb-3">
+                <div class="input-group-prepend">
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">โทรศัพท์</span>
+                </div>
+                <input type="tel" class="form-control" id="customer_telephone" name="customer_telephone" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="xxxxxxxxxx" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="กรุณากรอกเบอร์โทรศัพท์ให้ถูกต้อง">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="input-group mx-sm-5 mb-3">
+                <div class="input-group-prepend">
+                  <span style="width: 120px;" class="input-group-text" id="inputGroup-sizing-default">อีเมล</span>
+                </div>
+                <input class="form-control" id="customer_email" name="customer_email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="example@example.com" type="email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" title="กรุณาตรวจสอบรูปแบบ E-mail" />
+              </div>
+            </div>
+
+          </div>
+          <!-- End detial. -->
+
+
 
           <!-- Next Seminar -->
           <div class="card-header">

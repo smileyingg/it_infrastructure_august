@@ -55,6 +55,10 @@ include 'head.php';
         <td>ข้อ 4.5</td>
         <td>Monitoring as a Service</td>
         <td>Software Defined Infrastructure</td>
+        <td>ชื่อบริษัท</td>
+        <td>ชื่อผู้ให้ข้อมูล</td>
+        <td>โทรศัพท์</td>
+        <td>อีเมล</td>
         <td>หัวข้อสัมมนาที่ต้องการในครั้งถัดไป</td>
         <td>ข้อเสนอแนะเพิ่มเติม</td>
         <!-- <td>ลบข้อมูล</td> -->
@@ -84,11 +88,15 @@ include 'head.php';
         echo "<td>" . $row["q4_5"] .  "</td> ";
         echo "<td>" . $row["q5_1"] .  "</td> ";
         echo "<td>" . $row["q5_2"] .  "</td> ";
+        echo "<td>" . $row["company_name"] .  "</td> ";
+        echo "<td>" . $row["customer_name"] .  "</td> ";
+        echo "<td>" . $row["customer_telephone"] .  "</td> ";
+        echo "<td>" . $row["customer_email"] .  "</td> ";
         echo "<td>" . $row["next_seminar_detail"] .  "</td> ";
         echo "<td>" . $row["suggestions_detail"] .  "</td> ";
 
         //ลบข้อมูล
-        // echo "<td style='text-align: center;'><a href='admin_del.php?id=$row[0]' onclick=\"return confirm('คุณต้องการลบข้อมูลแถวนี้ใช่หรือไม่? !!!')\"><img src='assets/images/bin.png' style='width:25px;heigth:25px;' /></a></td> ";
+        // echo "<td style='text-align: center;'><a href='admin_del.php?id=$row[0]'onclick=\"return confirm('คุณต้องการลบข้อมูลแถวนี้ใช่หรือไม่? !!!')\"><img src='assets/images/bin.png' style='width:25px;heigth:25px;' /></a></td> ";
         echo "</tr>";
       }
       echo "</table>";
@@ -96,39 +104,6 @@ include 'head.php';
       ?>
   </div>
 
-  <!-- <script>
-    $(document).ready(function() {
-      $('#dtHorizontalExample').DataTable({
-        "scrollX": true
-      });
-      $('.dataTables_length').addClass('bs-select');
-    });
-  </script>
-
-  <style>
-    .dtHorizontalExampleWrapper {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    #dtHorizontalExample th,
-    td {
-      white-space: nowrap;
-    }
-
-    table.dataTable thead .sorting:after,
-    table.dataTable thead .sorting:before,
-    table.dataTable thead .sorting_asc:after,
-    table.dataTable thead .sorting_asc:before,
-    table.dataTable thead .sorting_asc_disabled:after,
-    table.dataTable thead .sorting_asc_disabled:before,
-    table.dataTable thead .sorting_desc:after,
-    table.dataTable thead .sorting_desc:before,
-    table.dataTable thead .sorting_desc_disabled:after,
-    table.dataTable thead .sorting_desc_disabled:before {
-      bottom: .5em;
-    }
-  </style> -->
 </body>
 
 </html>

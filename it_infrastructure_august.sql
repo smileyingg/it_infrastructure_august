@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 14, 2019 at 10:56 AM
+-- Generation Time: Aug 26, 2019 at 08:13 AM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.3.6
 
@@ -50,6 +50,10 @@ CREATE TABLE `answers` (
   `q4_5` int(11) NOT NULL,
   `q5_1` varchar(100) NOT NULL,
   `q5_2` varchar(100) NOT NULL,
+  `company_name` varchar(100) DEFAULT NULL,
+  `customer_name` varchar(100) DEFAULT NULL,
+  `customer_telephone` varchar(10) DEFAULT NULL,
+  `customer_email` varchar(100) DEFAULT NULL,
   `next_seminar_detail` varchar(100) NOT NULL,
   `suggestions_detail` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -98,7 +102,7 @@ ALTER TABLE `member`
 -- AUTO_INCREMENT for table `answers`
 --
 ALTER TABLE `answers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `member`

@@ -38,6 +38,10 @@ echo '  <tr>
 <td>ข้อ 4.5</td>
 <td>Monitoring as a Service</td>
 <td>Software Defined Infrastructure</td>
+<td>ชื่อบริษัท</td>
+<td>ชื่อผู้ให้ข้อมูล</td>
+<td>โทรศัพท์</td>
+<td>อีเมล</td>
 <td>หัวข้อสัมมนาที่ต้องการในครั้งถัดไป</td>
 <td>ข้อเสนอแนะเพิ่มเติม</td>
         </tr>';
@@ -64,6 +68,10 @@ while ($row = $res->fetch_array()) {
   <td>' . $row['q4_5'] . '</td>
   <td>' . $row['q5_1'] . '</td>
   <td>' . $row['q5_2'] . '</td>
+  <td>' . $row['company_name'] . '</td>
+  <td>' . $row['customer_name'] . '</td>
+  <td>' . $row['customer_telephone'] . '</td>
+  <td>' . $row['customer_email'] . '</td>
   <td>' . $row['next_seminar_detail'] . '</td>
   <td>' . $row['suggestions_detail'] . '</td>
 
